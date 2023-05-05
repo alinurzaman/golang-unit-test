@@ -32,3 +32,8 @@
 - `t.Run("Sub Test Name", func(t *testing.T){})`
 - `go test -run TestFunctionName/SubTestName` (run only specific sub test in a function)
 - `go test -run /SubTestName` (run all sub test with prefix)
+
+## WHY USE TABLE TEST
+
+- To simplify when we use many data.
+- Use struct to implement table test.
