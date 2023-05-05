@@ -20,3 +20,9 @@
 ## HOW TO SKIP TEST
 
 - `t.Skip()` (to skip the unit test)
+
+## BEFORE AND AFTER TEST
+
+- Use `func TestMain()`
+- Use `testing.M` instead of `testing.T`
+- `m.Run()` (to run all unit test)
