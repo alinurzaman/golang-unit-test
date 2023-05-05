@@ -26,3 +26,9 @@
 - Use `func TestMain()`
 - Use `testing.M` instead of `testing.T`
 - `m.Run()` (to run all unit test)
+
+## HOW TO IMPLEMENT SUB TEST
+
+- `t.Run("Sub Test Name", func(t *testing.T){})`
+- `go test -run TestFunctionName/SubTestName` (run only specific sub test in a function)
+- `go test -run /SubTestName` (run all sub test with prefix)
