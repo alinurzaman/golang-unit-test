@@ -1,4 +1,4 @@
-## HOW TO RUN
+## HOW TO RUN TEST
 
 - `go test` (run all unit test)
 - `go test -v` (run all unit test with details)
@@ -16,3 +16,7 @@
 
 - Add this library: github.com/stretchr/testify
 - Run script `go get github.com/stretchr/testify`
+
+## HOW TO SKIP TEST
+
+- `t.Skip()` (to skip the unit test)
