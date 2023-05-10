@@ -9,6 +9,20 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+func BenchmarkSub(b *testing.B) {
+	b.Run("World", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			HelloWorld("World")
+		}
+	})
+
+	b.Run("Ali", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			HelloWorld("Ali")
+		}
+	})
+}
+
 func BenchmarkHelloWorld(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		HelloWorld("World")
