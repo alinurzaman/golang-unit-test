@@ -37,3 +37,12 @@
 
 - To simplify when we use many data.
 - Use struct to implement table test.
+
+## HOW TO USE BENCHMARK TEST
+
+- Use `testing.B`
+- Don't return value.
+- `go test -v -bench=.` (run all benchmark and unit test)
+- `go test -v -run=NotMatchUnitTest -bench=.` (run benchmark only)
+- `go test -v -run=NotMatchUnitTest -bench=BenchmarkName` (run specific benchmark)
+- `go test -v -run=NotMatchUnitTest -bench=. ./...` (run benchmark from parent folder)
